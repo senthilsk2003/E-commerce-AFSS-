@@ -1,0 +1,176 @@
+/* Navbar styles */
+.navbar {
+    background-color: #232f3e; /* Dark background color */
+    list-style: none; /* Remove the bullet points */
+    padding-left: 0; /* Remove default padding */
+}
+
+.navbar-toggler {
+    border-color: transparent;
+    color: #f9e800; /* Yellow toggler color */
+}
+
+.navbar-nav {
+    display: flex; /* Align navbar items horizontally */
+    justify-content: flex-start; /* Adjust alignment */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    list-style: none; /* Remove the bullet points */
+    padding-left: 0; /* Remove default padding */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* White link color */
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #f9e800; /* Yellow hover background color */
+    color: #7ed321; /* Green hover link color */
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+    display: none; /* Hide all submenus by default */
+    position: absolute;
+    background-color: #fff; /* Background color */
+    z-index: 1; /* Ensure the submenu appears above other elements */
+}
+
+
+.dropdown-menu .dropdown-item {
+    color: #333;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-bottom: 1px solid #f3f3f3;
+    transition: all 0.3s ease;
+    list-style: none; /* Remove bullets */
+}
+
+.dropdown-menu .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #555;
+}
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Display the submenu on hover */
+}
+.navbar-nav .nav-item.dropdown:hover ~ .nav-item.dropdown .dropdown-menu {
+    display: none; /* Hide other submenus */
+}
+
+/* Header Title Styles */
+.header-main .navbar-brand {
+    font-size: 3rem; /* Increase the font size */
+    font-weight: bold;
+    color: #7ed321; /* Green title color */
+    text-align: center; /* Center align the text */
+    width: 100%; /* Ensure full width */
+    margin: 0 auto; /* Center the title */
+    display: block; /* Make it a block-level element */
+    text-decoration: none; /* Remove underline */
+    font-family: Arial, sans-serif; /* Font family */
+}
+
+/* Search box styles */
+.header-main .input-group {
+    position: relative;
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+.header-main input[type='search'] {
+    border-radius: 4px; /* Rounded corners */
+    padding: 12px; /* Adjust padding */
+    border: 1px solid #ccc;
+    height: 48px; /* Adjust height */
+    width: 70%; /* Adjust width */
+    font-size: 1rem; /* Adjust font size */
+    transition: border-color 0.3s ease-in-out;
+}
+
+.header-main input[type='search']:focus {
+    border-color: #f9e800; /* Yellow focus color */
+    outline: none; /* Remove default focus outline */
+}
+
+.header-main .btn.btn-primary {
+    border-radius: 0 4px 4px 0; /* Rounded corners for the button */
+    height: 48px; /* Adjust height */
+    width: 30%; /* Adjust width */
+    padding: 0 16px; /* Adjust padding */
+    font-size: 1rem; /* Adjust font size */
+    background-color: #f9e800; /* Yellow button color */
+    color: #fff; /* Text color */
+    border-color: #f9e800; /* Border color */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.header-main .btn.btn-primary:hover {
+    background-color: #fff; /* White button hover color */
+    border-color: #fff; /* Border color on hover */
+}
+
+.header-main select.form-select {
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ccc;
+    height: 48px; /* Adjust height */
+    width: 100%; /* Adjust width */
+    padding: 12px; /* Adjust padding */
+    font-size: 1rem; /* Adjust font size */
+    transition: border-color 0.3s ease-in-out;
+    appearance: none; /* Remove default dropdown arrow in some browsers */
+    -webkit-appearance: none; /* For Webkit-based browsers */
+    -moz-appearance: none; /* For Firefox */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>'); /* Custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: calc(100% - 16px) center; /* Position the arrow */
+    background-size: 16px; /* Size of the arrow */
+}
+
+/* Styles on select box focus */
+.header-main select.form-select:focus {
+    border-color: #f9e800; /* Yellow focus color */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Other buttons' styles */
+.header-main .btn {
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 10px;
+    font-size: 1rem; /* Adjust font size */
+    padding: 10px 20px; /* Adjust padding */
+    transition: all 0.3s ease;
+    text-decoration: none; /* Remove underlines */
+    color: #fff; /* White text color */
+}
+
+/* Sign in button */
+.header-main .btn:nth-child(1) {
+    background-color: #7ed321; /* Green button color */
+    border-color: #7ed321; /* Border color */
+}
+
+/* Wishlist button */
+.header-main .btn:nth-child(2) {
+    background-color: #f9e800; /* Yellow button color */
+    border-color: #f9e800; /* Border color */
+}
+
+/* My cart button */
+.header-main .btn:nth-child(3) {
+    background-color: #7ed321; /* Green button color */
+    border-color: #7ed321; /* Border color */
+}

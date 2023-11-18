@@ -1,0 +1,95 @@
+/* Footer styles */
+.footer-section {
+    background-color: #f8f9fa; /* Light gray background color */
+    color: #333; /* Dark font color */
+    padding: 30px 0; /* Adjust padding as needed */
+}
+
+.section-footer {
+    background-color: #f8f9fa; /* Light gray background color */
+    color: #333; /* Dark font color */
+}
+
+.footer-main {
+    padding-bottom: 20px; /* Bottom padding */
+}
+
+.footer-bottom {
+    background-color: #f8f9fa; /* Light gray background color */
+    color: #333; /* Dark font color */
+    padding: 15px 0; /* Adjust padding as needed */
+}
+
+.footer-bottom i {
+    color: #006400; /* Dark green color for icons */
+}
+
+/* Footer Title */
+.footer-main .title {
+    color: #006400; /* Dark green color for title */
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 15px; /* Bottom margin */
+}
+
+/* Footer Links */
+.list-menu li a {
+    color: #333; /* Dark font color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+.list-menu li a:hover {
+    color: #006400; /* Dark green color on hover */
+}
+
+/* Newsletter Form */
+.footer-main form {
+    margin-bottom: 15px; /* Bottom margin */
+}
+
+.footer-main form .form-control {
+    border-radius: 0; /* Remove border radius */
+}
+
+/* Cart Sidebar */
+.offcanvas-header {
+    background-color: #006400; /* Dark green header background */
+    color: #fff; /* White font color */
+    border-bottom: none; /* Remove bottom border */
+    border-radius: 0; /* Remove border radius */
+    padding: 15px; /* Padding */
+}
+
+.offcanvas-body {
+    padding: 15px; /* Padding */
+}
+
+.itemside {
+    display: flex;
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+.itemside img {
+    max-width: 70px; /* Adjust image size */
+    margin-right: 10px; /* Right margin */
+}
+
+.itemside .info {
+    flex-grow: 1;
+}
+
+.price {
+    color: #006400; /* Dark green color for price */
+}
+
+.btn-success {
+    background-color: #006400; /* Dark green background color for checkout button */
+    color: #fff; /* White font color */
+    border-radius: 0; /* Remove border radius */
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #004d00; /* Darker green on hover */
+}
