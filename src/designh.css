@@ -1,93 +1,62 @@
-/* styles.css */
+/* Enhanced Product Cards */
+.card-product-grid {
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+  border-radius: 8px;npm
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+}
 
-/* Basic styles for the home-section */
-.home-section {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Section Intro */
-  .section-intro {
-    padding: 60px 0;
-    text-align: center;
-  }
-  
-  .section-intro h1 {
-    font-size: 3em;
-    line-height: 1.2;
-  }
-  
-  .section-intro p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-  }
-  
-  /* New Products Section */
-  .section-heading {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  
-  /* Product Cards */
-  .card-product-grid {
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    border-radius: 5px;
-  }
-  
-  .card-product-grid .img-wrap {
-    text-align: center;
-  }
-  
-  .card-product-grid img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-  }
-  
-  .card-product-grid .info-wrap {
-    padding: 20px;
-  }
-  
-  .card-product-grid .title {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .card-product-grid .price {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #000;
-  }
-  
-  .card-product-grid .btn-primary {
-    margin-top: 10px;
-  }
-  
-  /* Why Choose Us Section */
-  .section-heading {
-    margin-bottom: 50px;
-  }
-  
-  /* Blog Posts Section */
-  .padding-y {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  
-  .padding-y .article {
-    margin-bottom: 30px;
-  }
-  
-  .padding-y .article img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 15px;
-  }
-  
-  .padding-y .article h6 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
+.card-product-grid:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-product-grid .img-wrap {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-product-grid img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.card-product-grid:hover img {
+  transform: scale(1.05);
+}
+
+.card-product-grid .info-wrap {
+  padding: 20px;
+}
+
+.card-product-grid .title {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card-product-grid .price {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #ff6347;
+  margin-bottom: 20px;
+}
+
+.card-product-grid .btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  background-color: #ff6347;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card-product-grid .btn-primary:hover {
+  background-color: #1a1a2e;
+}

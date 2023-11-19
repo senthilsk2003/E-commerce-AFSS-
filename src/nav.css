@@ -1,25 +1,25 @@
 /* Navbar styles */
 .navbar {
-    background-color: #232f3e; /* Dark background color */
-    list-style: none; /* Remove the bullet points */
-    padding-left: 0; /* Remove default padding */
+    background-color: #1a1a2e; /* Dark blue background */
+    list-style: none;
+    padding-left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-toggler {
-    border-color: transparent;
-    color: #f9e800; /* Yellow toggler color */
+    border: none;
+    color: #ff6347; /* Red toggler color */
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .navbar-nav {
-    display: flex; /* Align navbar items horizontally */
-    justify-content: flex-start; /* Adjust alignment */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    list-style: none; /* Remove the bullet points */
-    padding-left: 0; /* Remove default padding */
+    display: flex;
+    align-items: center;
 }
 
 .navbar-nav .nav-item {
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 .navbar-nav .nav-item:last-child {
@@ -27,34 +27,32 @@
 }
 
 .navbar-nav .nav-link {
-    color: #fff; /* White link color */
+    color: #fff;
     font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 0;
+    padding: 12px 18px;
+    border-radius: 4px;
     transition: all 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    background-color: #f9e800; /* Yellow hover background color */
-    color: #7ed321; /* Green hover link color */
+    background-color: #ff6347; /* Red hover background */
+    color: #1a1a2e; /* Dark blue hover link color */
 }
 
-/* Dropdown styles */
 .dropdown-menu {
-    display: none; /* Hide all submenus by default */
+    display: none;
     position: absolute;
-    background-color: #fff; /* Background color */
-    z-index: 1; /* Ensure the submenu appears above other elements */
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .dropdown-menu .dropdown-item {
     color: #333;
     font-weight: 500;
-    padding: 8px 20px;
+    padding: 10px 20px;
     border-bottom: 1px solid #f3f3f3;
     transition: all 0.3s ease;
-    list-style: none; /* Remove bullets */
 }
 
 .dropdown-menu .dropdown-item:last-child {
@@ -65,112 +63,325 @@
     background-color: #f8f9fa;
     color: #555;
 }
+
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
-    display: block; /* Display the submenu on hover */
-}
-.navbar-nav .nav-item.dropdown:hover ~ .nav-item.dropdown .dropdown-menu {
-    display: none; /* Hide other submenus */
+    display: block;
 }
 
 /* Header Title Styles */
 .header-main .navbar-brand {
-    font-size: 3rem; /* Increase the font size */
+    font-size: 2.5rem;
     font-weight: bold;
-    color: #7ed321; /* Green title color */
-    text-align: center; /* Center align the text */
-    width: 100%; /* Ensure full width */
-    margin: 0 auto; /* Center the title */
-    display: block; /* Make it a block-level element */
-    text-decoration: none; /* Remove underline */
-    font-family: Arial, sans-serif; /* Font family */
+    color: #ff6347; /* Red title color */
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
 }
 
 /* Search box styles */
 .header-main .input-group {
     position: relative;
-    margin-top: 10px; /* Adjust margin as needed */
+    margin-top: 15px;
 }
 
 .header-main input[type='search'] {
-    border-radius: 4px; /* Rounded corners */
-    padding: 12px; /* Adjust padding */
+    border-radius: 4px;
+    padding: 14px;
     border: 1px solid #ccc;
-    height: 48px; /* Adjust height */
-    width: 70%; /* Adjust width */
-    font-size: 1rem; /* Adjust font size */
+    height: 50px;
+    width: 65%;
+    font-size: 1.1rem;
     transition: border-color 0.3s ease-in-out;
 }
 
 .header-main input[type='search']:focus {
-    border-color: #f9e800; /* Yellow focus color */
-    outline: none; /* Remove default focus outline */
+    border-color: #ff6347; /* Red focus color */
+    outline: none;
 }
 
 .header-main .btn.btn-primary {
-    border-radius: 0 4px 4px 0; /* Rounded corners for the button */
-    height: 48px; /* Adjust height */
-    width: 30%; /* Adjust width */
-    padding: 0 16px; /* Adjust padding */
-    font-size: 1rem; /* Adjust font size */
-    background-color: #f9e800; /* Yellow button color */
-    color: #fff; /* Text color */
-    border-color: #f9e800; /* Border color */
+    border-radius: 0 4px 4px 0;
+    height: 50px;
+    width: 35%;
+    padding: 0 18px;
+    font-size: 1.1rem;
+    background-color: #ff6347; /* Red button color */
+    color: #fff;
+    border-color: #ff6347;
     transition: background-color 0.3s ease-in-out;
 }
 
 .header-main .btn.btn-primary:hover {
-    background-color: #fff; /* White button hover color */
-    border-color: #fff; /* Border color on hover */
-}
-
-.header-main select.form-select {
-    border-radius: 4px; /* Rounded corners */
-    border: 1px solid #ccc;
-    height: 48px; /* Adjust height */
-    width: 100%; /* Adjust width */
-    padding: 12px; /* Adjust padding */
-    font-size: 1rem; /* Adjust font size */
-    transition: border-color 0.3s ease-in-out;
-    appearance: none; /* Remove default dropdown arrow in some browsers */
-    -webkit-appearance: none; /* For Webkit-based browsers */
-    -moz-appearance: none; /* For Firefox */
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>'); /* Custom dropdown arrow */
-    background-repeat: no-repeat;
-    background-position: calc(100% - 16px) center; /* Position the arrow */
-    background-size: 16px; /* Size of the arrow */
-}
-
-/* Styles on select box focus */
-.header-main select.form-select:focus {
-    border-color: #f9e800; /* Yellow focus color */
-    outline: none; /* Remove default focus outline */
+    background-color: #1a1a2e; /* Dark blue button hover color */
+    border-color: #1a1a2e;
+    color: #fff;
 }
 
 /* Other buttons' styles */
 .header-main .btn {
-    border-radius: 4px; /* Rounded corners */
-    margin-right: 10px;
-    font-size: 1rem; /* Adjust font size */
-    padding: 10px 20px; /* Adjust padding */
+    border-radius: 4px;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    padding: 12px 22px;
     transition: all 0.3s ease;
-    text-decoration: none; /* Remove underlines */
-    color: #fff; /* White text color */
+    text-decoration: none;
+    color: #fff;
 }
 
 /* Sign in button */
 .header-main .btn:nth-child(1) {
-    background-color: #7ed321; /* Green button color */
-    border-color: #7ed321; /* Border color */
+    background-color: #ff6347; /* Red button color */
+    border-color: #ff6347;
 }
 
 /* Wishlist button */
 .header-main .btn:nth-child(2) {
-    background-color: #f9e800; /* Yellow button color */
-    border-color: #f9e800; /* Border color */
+    background-color: #1a1a2e; /* Dark blue button color */
+    border-color: #1a1a2e;
 }
 
 /* My cart button */
 .header-main .btn:nth-child(3) {
-    background-color: #7ed321; /* Green button color */
-    border-color: #7ed321; /* Border color */
+    background-color: #ff6347; /* Red button color */
+    border-color: #ff6347;
 }
+/* Targeting the specific elements within the structure */
+.row .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.row .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-wrap img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-wrap {
+    padding: 20px;
+}
+
+.info-wrap .price {
+    color: #ff6347;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.info-wrap .title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.info-wrap .btn-primary {
+    background-color: #ff6347;
+    border-color: #ff6347;
+    color: #fff;
+}
+
+.info-wrap .btn-primary:hover {
+    background-color: #1a1a2e;
+    border-color: #1a1a2e;
+}
+.info-wrap .btn-light {
+    color: #1a1a2e;
+    border-color: #1a1a2e;
+}
+
+.info-wrap .btn-light:hover {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+
+/* Enhanced Styles for the Section with Red and Dark Blue Theme */
+.my-5 {
+    background-color: #1a1a2e; /* Dark blue background color */
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.my-5 h1 {
+    font-size: 3em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #ff6347; /* Red text color */
+}
+
+.my-5 p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #fff; /* White text color */
+}
+
+.my-5 a.btn {
+    margin: 0 10px;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.my-5 a.btn.btn-warning {
+    background-color: #ff6347; /* Red */
+    color: #fff; /* White text color */
+    border: 1px solid #ff6347;
+}
+
+.my-5 a.btn.btn-light {
+    background-color: transparent;
+    color: #ff6347; /* Red text color */
+    border: 1px solid #ff6347;
+}
+
+.my-5 a.btn.btn-warning:hover,
+.my-5 a.btn.btn-light:hover {
+    background-color: #1a1a2e; /* Dark blue */
+    border-color: #1a1a2e;
+}
+
+/* Enhanced Styles for Section Heading */
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #1a1a2e; /* Dark blue color */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff6347; /* Red color */
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+
+/* Styling for 'Why Choose Us' section */
+.section-heading {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #1a1a2e; /* Dark blue color */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ff6347; /* Red color */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+}
+
+/* Styles for individual items */
+.itemside {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.itemside .aside {
+    flex: 0 0 auto;
+}
+
+.itemside .rounded-circle {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border: 2px solid #ff6347; /* Red border */
+    color: #ff6347; /* Red color */
+    background-color: #1a1a2e; /* Dark blue background */
+}
+
+.itemside .info {
+    flex-grow: 1;
+    padding-left: 1rem;
+}
+
+.itemside .title {
+    font-size: 1.2rem;
+    color: #1a1a2e; /* Dark blue color */
+    margin-bottom: 0.5rem;
+}
+
+.itemside p {
+    color: #666; /* Grayish text color */
+}
+/* Blog Posts Section Styles with Red and Dark Blue Theme */
+
+
+
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-lg-3,
+.col-md-6,
+.col-sm-6,
+.col-12 {
+    padding: 0 15px;
+}
+
+.article {
+    margin-bottom: 3rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.article .img-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.article:hover img {
+    transform: scale(1.05);
+}
+
+.article time {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.5rem;
+}
+
+.article h6.title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a2e; /* Dark blue color */
+}
+
+.article p {
+    color: #333; /* Dark text color */
+    padding: 0 15px;
+}
+
+
+
+

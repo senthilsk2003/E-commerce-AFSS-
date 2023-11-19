@@ -26,22 +26,21 @@ function Home() {
             </header> 
 
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                <figure class="card card-product-grid">
-                    <div class="img-wrap"> 
-                    <img src="/assets/images/aj.jpg" alt="aj" />
-                    </div>
-                    <figcaption class="info-wrap border-top">
-                    <div class="price-wrap">
-                        <span class="price">$790.50</span>
-                    </div>
-                    <p class="title mb-2">GoPro HERO6 4K Action Camera - Black</p>
-                    
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                    <a href="#" class="btn btn-light btn-icon"> <i class="fa fa-heart"></i> </a>
-                    </figcaption>
-                </figure>
-                </div> 
+            <div class="col-lg-3 col-md-6 col-sm-6">
+        <figure class="card card-product-grid">
+            <div class="img-wrap">
+                <img src="\https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI" alt="Redshoe" />
+            </div>
+            <figcaption class="info-wrap border-top">
+                <div class="price-wrap">
+                    <span class="price">$790.50</span>
+                </div>
+                <p class="title mb-2">GoPro HERO6 4K Action Camera - Black</p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+                <a href="#" class="btn btn-light btn-icon"> <i class="fa fa-heart"></i> </a>
+            </figcaption>
+        </figure>
+    </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6">
                 <figure class="card card-product-grid">
@@ -183,7 +182,7 @@ function Home() {
                     </div>
                     <figcaption class="info">
                     <h6 class="title">Reasonable prices</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor </p>
+                    <p>Experience satisfaction worldwide with our premium-quality items. Join thousands of happy customers benefiting from our global shipping." </p>
                     </figcaption>
                 </figure> 
                 </div>
@@ -196,7 +195,7 @@ function Home() {
                     </div>
                     <figcaption class="info">
                     <h6 class="title">Best quality</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor </p>
+                    <p>"Uncompromising quality defines every product, ensuring excellence in every detail. Experience the pinnacle of craftsmanship and satisfaction." </p>
                     </figcaption>
                 </figure> 
                 </div>
@@ -209,7 +208,7 @@ function Home() {
                     </div>
                     <figcaption class="info">
                     <h6 class="title">Worldwide shipping</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor </p>
+                    <p>"Seamless global shipping ensures your desired items reach you, wherever you are. Embrace convenience with our worldwide delivery." </p>
                     </figcaption>
                 </figure> 
                 </div> 
@@ -222,7 +221,7 @@ function Home() {
                     </div>
                     <figcaption class="info">
                     <h6 class="title">Customer satisfaction</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor </p>
+                    <p>"Your contentment fuels our dedication, crafting experiences that exceed expectations. Join our satisfied community, your happiness is our priority." </p>
                     </figcaption>
                 </figure> 
                 </div>
@@ -235,7 +234,7 @@ function Home() {
                     </div>
                     <figcaption class="info">
                     <h6 class="title">Happy customers</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor </p>
+                    <p>"Join a community of delighted customers experiencing joy with every purchase. Your happiness fuels our commitment to excellence." </p>
                     </figcaption>
                 </figure> 
                 </div>
@@ -248,7 +247,7 @@ function Home() {
                     </div>
                     <figcaption class="info">
                     <h6 class="title">Thousand items</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor </p>
+                    <p>"Choose from a diverse selection of over a thousand items, catering to every need. Find the perfect fit among our extensive range of products." </p>
                     </figcaption>
                 </figure> 
                 </div> 
